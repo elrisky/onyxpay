@@ -8,7 +8,17 @@ const CACHE_ASSETS = [
   "main.js",
   "App.js",
   "dashboard/app",
-  // Include your main JavaScript file
+  "/dashboard/buydata",
+  "/dashboard/user/account",
+  "/dashboard/user/Tansaction-pin",
+  "/dashboard/user/change-username",
+  "/dashboard/user/update-email",
+  "/dashboard/user/update-password",
+  "/dashboard/user/rate",
+  "/dashboard/user/cards",
+  "/dashboard/user/services",
+  "/dashboard/user/transactions",
+  "/dashboard/user/transactions-detail",
   // Add other assets you want to cache, like images or fonts
 ];
 
@@ -39,21 +49,20 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-    if(!navigator.onLine){
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse; // Serve from cache
-      }
-      
-      return fetch(event.request).then((response) => {
-        return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, response.clone());
-          return response; // Return the fetched response
-        });
-      });
-    })
-  );
-}
-});
+  if (!navigator.onLine) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) {
+          return cachedResponse; // Serve from cache
+        }
 
+        return fetch(event.request).then((response) => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, response.clone());
+            return response; // Return the fetched response
+          });
+        });
+      })
+    );
+  }
+});
