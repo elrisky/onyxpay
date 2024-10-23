@@ -39,10 +39,7 @@ const Index = () => {
   //     setFade(true);
   //   }, 500);
   // };
- const goToLogin = () => {
-   // Replace with your login page navigation logic
-   window.location.href = "/login";
- };
+ 
  const BackgroundImageStyles = {
    height: "100vh",
    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${slides[currentSlide]})`,

@@ -11,7 +11,7 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 import { Eye, EyeOff } from "react-feather";
-
+import { Link } from "react-router-dom";
 function App() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
@@ -127,9 +127,9 @@ function App() {
 
               <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                 Already have an account?{" "}
-                <a href="/login" style={{ color: "#393f81" }}>
+                <Link to="/login" style={{ color: "#393f81" }}>
                   Login here
-                </a>
+                </Link>
               </p>
 
               <div className="d-flex flex-row justify-content-start">

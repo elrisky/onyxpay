@@ -60,9 +60,9 @@ function App() {
                 size="lg"
               />
 
-              <MDBBtn className="mb-4 px-5" color="dark" size="lg">
+              <Link to="/dashboard/app" className="mb-4 px-5" color="dark" size="lg">
                 Login
-              </MDBBtn>
+              </Link>
               <a className="small text-muted" href="#!">
                 Forgot password?
               </a>
