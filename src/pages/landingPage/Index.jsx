@@ -5,6 +5,7 @@ import "../../assets/landingPage/css/style.css";
 import sliderImage1 from "../../assets/landingPage/images/backgrounds/Ai image.jpg";
 import sliderImage2 from "../../assets/landingPage/images/backgrounds/backgroun.jpg";
 import sliderImage3 from "../../assets/landingPage/images/backgrounds/background.jpg";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const slides = [sliderImage1, sliderImage2, sliderImage3];
@@ -70,16 +71,15 @@ const Index = () => {
             </p>
             <div className="col-6 m-auto mt-2">
               {currentSlide === slides.length - 1 ? (
-                <button
+                <Link to="/login"
                   className="btn bolder fs-4 p-2"
                   style={{
                     backgroundColor: "rgba(var(--white),1)",
                     width: "100%",
                   }}
-                  onClick={goToLogin}
                 >
                   Get Started
-                </button>
+                </Link>
               ) : (
                 <button
                   className="btn bolder fs-4 p-2"
