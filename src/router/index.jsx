@@ -16,7 +16,7 @@ import Transaction from "../pages/user-dashboard/Transactions";
 import TransactionDetails from "../pages/user-dashboard/TransactionDetail";
 const MyRouter = () => {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
@@ -35,9 +35,12 @@ const MyRouter = () => {
         <Route path="/dashboard/user/cards" element={<Card />} />
         <Route path="/dashboard/user/services" element={<Services />} />
         <Route path="/dashboard/user/transactions" element={<Transaction />} />
-        <Route path="/dashboard/user/transactions-detail" element={<TransactionDetails />} />
+        <Route
+          path="/dashboard/user/transactions-detail"
+          element={<TransactionDetails />}
+        />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 export default MyRouter;
