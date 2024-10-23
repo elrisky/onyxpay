@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
+
+:root {
+  --theme-color: 140, 28, 19;
+  --theme-hover-color: 140, 28, 19;
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --dark-text: 23, 22, 27;
+  --light-text: 149, 143, 159;
+  --box-bg: 159, 168, 190;
+  --light-bg: 246, 246, 247;
+  --error-color: 250, 49, 49;
+  --success-color: 17, 166, 121;
+}
+.dark {
+  --theme-color: 98, 44, 253;
+  --theme-hover-color: 98, 44, 253;
+  --white: 23, 22, 27;
+  --black: 255, 255, 255;
+  --dark-text: 255, 255, 255;
+  --light-text: 155, 163, 170;
+  --box-bg: 162, 160, 177;
+  --light-bg: 18, 38, 54;
+  --error-color: 250, 49, 49;
+  --success-color: 17, 166, 121;
+}
+.landing-header{
+    font-size:60px;
+}
+.install-btn{
+    bottom:5% !important;
+    left:45%;
+    background-color:rgba(var(--white),1);
+    font-weight:bold;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.install-btn {
+  background-color: rgba(255, 255, 255, 0.9); /* Example background color */
+  color: #333; /* Example text color */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  animation: pulse 1.5s infinite; /* Apply pulse animation */
+}
+
+/* Optional: Add hover effect for better UX */
+.install-btn:hover {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+
+@media screen and (max-width: 767px) {
+    .landing-header{
+        font-size:20px;
+    }
+    
+}
