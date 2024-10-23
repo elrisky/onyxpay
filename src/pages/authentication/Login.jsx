@@ -48,7 +48,7 @@ function App() {
               <MDBInput
                 wrapperClass="mb-4"
                 label="Email address"
-                id="formControlLg"
+                id="formControflLg"
                 type="email"
                 size="lg"
               />
@@ -60,7 +60,7 @@ function App() {
                 size="lg"
               />
 
-              <Link to="/dashboard/app" className="mb-4 px-5" color="dark" size="lg">
+              <Link to="/dashboard/app" className="btn btn-black text-white p-3 mb-4 px-5" color="dark" size="lg">
                 Login
               </Link>
               <a className="small text-muted" href="#!">
