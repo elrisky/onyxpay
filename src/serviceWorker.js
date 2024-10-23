@@ -1,5 +1,5 @@
 export default function registerServiceWorker() {
-  const workerUrl = `${import.meta.env.VITE_PUBLIC_URL}serviceWorker.js`; // Ensure this is correct
+  const workerUrl = `${import.meta.env.BASE_URL}serviceWorker.js`; // Ensure this is correct
 
   navigator.serviceWorker
     .register(workerUrl)
