@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "../pages/landingPage/Index";
-import Login from "../pages/authentication/login";
+import Login from "../pages/authentication/Login";
 import Register from "../pages/authentication/Register";
 import Dashboard from "../pages/user-dashboard/Dashboard";
 import BuyData from "../pages/user-dashboard/Buy-Data";
