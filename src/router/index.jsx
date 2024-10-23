@@ -16,7 +16,7 @@ import Transaction from "../pages/user-dashboard/Transactions";
 import TransactionDetails from "../pages/user-dashboard/TransactionDetail";
 const MyRouter = () => {
   return (
-    <Router>
+    <Router basename="/onyxpay">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
