@@ -16,7 +16,7 @@ import Transaction from "../pages/user-dashboard/Transactions";
 import TransactionDetails from "../pages/user-dashboard/TransactionDetail";
 const MyRouter = () => {
   return (
-    <Router basename="/onyxpay">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
@@ -37,7 +37,7 @@ const MyRouter = () => {
         <Route path="/dashboard/user/transactions" element={<Transaction />} />
         <Route path="/dashboard/user/transactions-detail" element={<TransactionDetails />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 export default MyRouter;
